@@ -190,7 +190,7 @@ namespace esphome
     {
       const uint32_t now = millis();
 
-      if (now - this->last_modbus_byte_ > 5)
+      if (now - this->last_modbus_byte_ > 50)
       {
         if (this->rx_buffer_.size() > 0)
         {
